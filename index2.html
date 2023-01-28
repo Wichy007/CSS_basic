@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--เป็นการอิมพอร์ทไฟล์ CSS ให้มีผลกับไฟล์ HTML นี้-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!--อิมพอร์ทฟอนท์จาก google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <title>CSS Format</title>
+    
+    <!--Embed CSS-->
+    <style>
+        p{
+            font-style: italic;
+        }
+        /*ใน font family สามารถใส่รูปแบบ font ได้มากกว่าหนึ่งชนิดตามลำดับไปเผื่อว่าเว็บบราวเซอร์ใหนไม่รองรับ
+        รูปแบบในลำดับที่หนึ่ง style จะนำลำดับที่สองสามสี่ตามลำดับมาใช้แทนให้เลย*/
+        .sriracha{
+            font-family: sriracha,Arial, Helvetica, sans-serif;
+        }
+        /* เครื่องหมาย * เป็น universal selector หมายถึงให้บังคับใช้ style กับทั้งเพจ*/
+        *{
+            font-size: 20px;
+        }
+        .itim{
+            font-family: itim;
+        }
+        #message{
+            font-size: medium;
+            color: darkorange;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!--inline CSS-->
+    <h1 style="color: red;font-weight: bolder;">Naravit</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Autem repellendus iusto voluptatum ab necessitatibus officiis deserunt incidunt repellat atque ipsa.</p>
+    <hr>
+
+    <h1 class="title">CSS3</h1>
+    <p id="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. A rem porro impedit,
+     modi quisquam officia voluptatem.</p>
+    <h1 class="sriracha">การเดินทางครั้งนี้คงเหงา</h1>
+    <hr>
+
+    <p style="border: 1px solid red;" widght="400px" height="400px">Lorem ipsum dolor sit, 
+        amet consectetur adipisicing elit. Dicta expedita esse aliquam, modi,
+        in placeat ipsum amet aspernatur dignissimos sapiente minima corporis? Minus laboriosam nesciunt pariatur,
+        esse quis velit ad.</p>
+ 
+    <!--รูปแบบฟอนต์ที่สามารถนำมาใช้กับ Attribute font family ได้ใน CSS3-->
+    <a href="https://www.cssfontstack.com/" target="blank">รูปแบบอักษรต่างๆที่นำไปใช้กับ CSS</a><br>
+    <a href="https://fonts.google.com/" target="blank">รูปแบบอักษรต่างๆที่นำไปใช้กับ CSS จาก google</a><br>
+    <a href="https://htmlcolorcodes.com/color-names/">สีต่างๆและค่าสำหรับกำหนดเพื่อให้ได้สีนั้นๆ</a><br>
+    <a href="https://htmlcolors.com/google-color-picker">เลือกสีเองแล้ว google จะช่วยแปลค่าเพื่อมาใช้กับ CSS ให้</a>
+    <hr style="width: 50%;" align="left">
+    <form action="">
+        <label for="firstname">ชื่อ</label>
+        <input type="text" placeholder="กรุณาใส่ชื่อ" class="sriracha">
+        <!--จะเห็นว่าแม้แต่ในฟอร์มก็สามารถบังคับใส่ font family ได้เช่นกัน-->
+    </form>
+    <h1 class="itim">try itim</h1>
+
+</body>
+</html>
