@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .box1{
+                border: 10px solid red;
+            }
+            #box2{
+                float: left;
+                border-width: 10px;
+                border-style: dashed;
+                border-radius: 10px;
+                border-color: aquamarine;
+                margin-top: 10px;
+                /*margin-bottom: 20px;*/
+                width: 60%;
+                
+            }
+            #box3{
+                float: right;
+                text-align: center;
+                border-width: 10px;
+                border-style: dashed;
+                border-radius: 10px;
+                border-color: blue;
+                margin-top: 10px;
+                /*margin-bottom: 20px;
+                margin-left: 50px;*/
+                width: 35%;
+            }
+            .box4{
+                border: 10px solid green;
+                clear: both; /*คำสัง clear ทำให้ element 
+                ลงมาอยู่ในช่องว่างใต้คำสั่ง float*/
+            }
+            .box5{
+                border: 10px solid orange;
+            }
+            .box6{
+                border: 10px solid yellowgreen; 
+                /*height: 80px;*/
+                
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, a?</div>
+        <div id="box2">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing <br/>elit. Iure, perspiciatis.
+            </p> 
+        </div>
+        <div id="box3">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, placeat!
+            </p>
+        </div>
+        
+        <div class="box4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, saepe.</div>
+        <div class="box5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, saepe.</div>
+    </body>
+</html>   
