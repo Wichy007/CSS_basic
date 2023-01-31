@@ -6,11 +6,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <style>
+            body{
+                background-color: deepskyblue;
+                background-image: url(https://cdn.pixabay.com/photo/2014/12/22/00/07/tree-576847__480.png);
+                /*External source image for background*/
+                background-repeat: no-repeat;                
+                /*การนำเข้ารูปภาพมาหากภาพมีขนาดเล็กกว่าพื้นที่ โปรแกรมจะทำซ้ำคือเอาภาพเดิมมาก้อปวางให้เต็มพื้นที่ */
+                background-position: 200px; /*ตำแหน่งของภาพพื้นหลัง ในคำสั่งตัวอย่างจะกำหนดได้แบบ align แต่สามารถกำหนดตำแหน่งแกน x,y ได้โดยเพิ่ม xหรือy ไปในคำสั่ง*/
+                background-attachment: fixed; /*เลือกว่าจะให้ภาพเลื่อนไปพร้อมกับหน้าจอมั้ย*/
+                background-size: cover;
+                height: 4000px;
+            }
             *{
                 box-sizing: border-box;
             }
             .box1{
                 border: 10px solid red;
+                margin: 20px; /*สามารถกำหนดแบบ Shrot hand ได้โดยกำหนดได้สี่รูปแบบ แบบสี่ตัว หมายถึง บน ขวา ล่าง ซ้าย และอื่นๆตามเอกสารการเรียน*/
+                padding: 20px;
+                background-color: black;
+                color: white;
             }
             #box2{
                 float: left;
@@ -21,6 +36,7 @@
                 margin-top: 10px;
                 /*margin-bottom: 20px;*/
                 width: 60%;
+                margin-bottom: 10px;
                 
             }
             #box3{
@@ -45,8 +61,13 @@
             }
             .box6{
                 border: 10px solid yellowgreen; 
-                /*height: 80px;*/
-                
+                height: 80px;
+                background-image: url(../HTML\ เบื้องต้น/image/boardgame.jpeg); /*internal source background image*/
+                background-size: cover /*เท่ากับกรอบพอดี*/
+            }
+            .car_pic1{
+                position: sticky; /*ทำให้วัตถุติดอยู่ที่ขอบเวลาเลื่อนให้ขอบมาชนมันจะถูกขอบลากมาด้วยโดยสามารถกำหนดระยะห่างจากขอบได้ด้วย*/
+                top: 20px;
             }
         </style>
     </head>
@@ -65,5 +86,7 @@
         
         <div class="box4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, saepe.</div>
         <div class="box5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, saepe.</div>
+        <div class="box6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, saepe.</div>
+        <img src="https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_1280.jpg" alt="car_pic" width="500px" height="500px" class="car_pic1">
     </body>
 </html>   

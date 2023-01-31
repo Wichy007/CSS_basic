@@ -1,0 +1,52 @@
+body{
+    height: 5000px;
+}
+.box{
+    width: 100px;
+    height: 100px;
+}
+#box1{
+    background-color: orange;
+    position: relative;/*กำหนดให้วัตถุสามารถปรับเปลี่ยนตำแหน่งได้เสมือนกดจอยเกมส์เลย*/
+    left: 50px;
+    top: 50px;
+    z-index: 1;/*คำสั่งกำหนดเลเยอร์ที่ต้องการให้วัตถุอยู่ ล่างสุดคือ 0*/
+    
+}
+#box2{
+    background-color:green;
+    position: absolute;/*คำสั่งกำหนดตำแหน่งคล้ายกับ relative แต่อันนี้จะอ้างอิงจากกรอบที่ครอบมันใว้ ถ้าไม่มีให้ใช้ body อ้างอิง*/
+    top: 150px;
+    left: 200px;
+
+}
+#box3{
+    background-color: purple;
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+#box4{
+    background-color:pink;
+    position: fixed;/*ทำให้วัตถุอยู่ที่ตำแหน่งเดิมแม้ว่าจะเลื่อนหน้าเว็บไปทางใหน ฟีลเหมือนโฆษนาเว็บพนัน*/
+
+}
+#box5{
+    background-color: red;
+    position: sticky;
+    top: 50px;
+}
+.container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: #333;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    background-color: yellow;
+    font-family: Sriracha,Arial, Helvetica, sans-serif;
+}
